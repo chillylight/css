@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table 布局</title>
+	<style>
+	.container {
+	    display: table;
+	    width: 100%;
+    }
+    .left, .main, .right {
+    	display: table-cell;
+    }
+    .left {
+	    width: 200px;
+	    height: 300px;
+	    background-color: red;
+    }
+    .main {
+    	background-color: blue;
+    }
+    .right {
+	    width: 100px;
+	    height: 300px;
+	    background-color: green;
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="main"></div>
+		<div class="right"></div>
+    </div>
+    <!-- 
+    左右模块各自向左右浮动，并设置中间模块的 margin 值使中间模块宽度自适应。
+	缺点就是主要内容无法最先加载，当页面内容较多时会影响用户体验。 -->
+</body>
+</html>
